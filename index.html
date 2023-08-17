@@ -10,8 +10,16 @@
     <div id="infoDiv">
         <h1>Welcome to my Etch-A-Sketch Project</h1>
     </div>
-    <div id="app"></div>
-    <footer><p>This is some footer text!</p></footer>
+    <div id="controlDiv">
+        <button id="16" type="button" onclick="createGrid(this.id)">16</button>
+        <button id="24" type="button" onclick="createGrid(this.id)">24</button>
+        <button id="100" type="button" onclick="createGrid(this.id)">100</button>
+        <button id="clearbtn" type="button" onclick="clearGrid()">CLEAR</button>
+    </div>
+    <div id="app"><div id="grid"></div></div>
+    <footer>
+        <p>This is some footer text!</p>
+    </footer>
 	<script src="etch.js"></script>    
   </body>
 </html>

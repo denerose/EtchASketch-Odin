@@ -12,6 +12,9 @@ function clearGrid() {
     grid === null || grid === void 0 ? void 0 : grid.remove();
     console.log("goodbye grid!");
 }
+function colourMe(me) {
+    me === null || me === void 0 ? void 0 : me.setAttribute("style", "background-color:blue;");
+}
 function createGrid(input) {
     let target = input * input;
     clearGrid();
@@ -24,6 +27,9 @@ function createGrid(input) {
     while (i++ < target) {
         let newSquare = document.createElement('div');
         newSquare.id = "appSquare";
+        newSquare.addEventListener("mouseover", () => {
+            colourMe(newSquare);
+        });
         grid === null || grid === void 0 ? void 0 : grid.appendChild(newSquare);
     }
 }

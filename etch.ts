@@ -14,6 +14,10 @@ function clearGrid(): void {
     console.log("goodbye grid!")
 }
 
+function colourMe (me: HTMLDivElement) {
+    me?.setAttribute("style", "background-color:blue;")
+}
+
 function createGrid(input: number): void {
     let target = input * input;
     clearGrid();
@@ -26,6 +30,9 @@ function createGrid(input: number): void {
     while (i++ < target) {
         let newSquare = document.createElement('div');
         newSquare.id = "appSquare";
+        newSquare.addEventListener("mouseover", () => {
+            colourMe(newSquare);
+        });
         grid?.appendChild(newSquare);
     }
 }

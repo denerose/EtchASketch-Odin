@@ -5,6 +5,7 @@
 #appSquare {
     background-color: white;
     border: 0.1px solid grey;
+    max-height: calc(100% / var(--total));
     flex: 1 0 calc(100% / var(--total));
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -42,5 +43,9 @@ button {
 }
 
 footer {
+    text-align: center;
+}
+
+h1 {
     text-align: center;
 }

@@ -1,15 +1,14 @@
-let target = 16
+"use strict";
+let target = 16;
 const app = document.getElementById("app");
-const cssRoot = document.querySelector(':root');
-
-function createGrid(): void {
-    let i = 0
+function createGrid() {
+    let i = 0;
     while (i++ < target) {
         let newSquare = document.createElement('div');
         newSquare.id = "appSquare";
-        app?.appendChild(newSquare);
+        app === null || app === void 0 ? void 0 : app.appendChild(newSquare);
+        // i ++;
         console.log(i);
     }
 }
-
 createGrid();

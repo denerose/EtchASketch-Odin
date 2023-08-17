@@ -1,0 +1,22 @@
+:root {
+    --total: 4;
+}
+
+#appSquare {
+    background-color: white;
+    border: 1px solid grey;
+    flex: 1 0 calc(25% - 4px);
+}
+
+#app {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+}

@@ -4,7 +4,7 @@
 
 #appSquare {
     background-color: white;
-    border: 1px solid grey;
+    border: 0.1px solid grey;
     flex: 1 0 calc(100% / var(--total));
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,7 +14,8 @@
 #app {
     background-color: red;
     width: fit-content;
-    height: fit-content;
+    height: 500px;
+    margin: auto;
 }
 
 #grid {
@@ -28,11 +29,16 @@
 
 #controlDiv {
     padding: 5px;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 
 button {
     width: 100px;
     height: 50px;
+    margin: 5px;
 }
 
 footer {

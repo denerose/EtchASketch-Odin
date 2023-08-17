@@ -1,4 +1,4 @@
-let target: number = 16
+let target: number = 4
 const app = document.getElementById("app");
 const cssRoot = document.querySelector(':root') as any;
 
@@ -14,7 +14,8 @@ function clearGrid(): void {
     console.log("goodbye grid!")
 }
 
-function createGrid(target: number): void {
+function createGrid(input: number): void {
+    let target = input * input;
     clearGrid();
     let newGrid = document.createElement('div');
     newGrid.id = "grid";
@@ -26,6 +27,7 @@ function createGrid(target: number): void {
         let newSquare = document.createElement('div');
         newSquare.id = "appSquare";
         grid?.appendChild(newSquare);
-        console.log(i);
     }
 }
+
+createGrid(4);

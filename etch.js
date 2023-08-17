@@ -1,5 +1,5 @@
 "use strict";
-let target = 16;
+let target = 4;
 const app = document.getElementById("app");
 const cssRoot = document.querySelector(':root');
 function updateCSS(target) {
@@ -12,7 +12,8 @@ function clearGrid() {
     grid === null || grid === void 0 ? void 0 : grid.remove();
     console.log("goodbye grid!");
 }
-function createGrid(target) {
+function createGrid(input) {
+    let target = input * input;
     clearGrid();
     let newGrid = document.createElement('div');
     newGrid.id = "grid";
@@ -24,6 +25,6 @@ function createGrid(target) {
         let newSquare = document.createElement('div');
         newSquare.id = "appSquare";
         grid === null || grid === void 0 ? void 0 : grid.appendChild(newSquare);
-        console.log(i);
     }
 }
+createGrid(4);

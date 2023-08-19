@@ -4,12 +4,7 @@
 
 #appSquare {
     background-color: white;
-    border: thin solid grey;
-    max-height: calc(100% / var(--total));
-    flex: 1 0 calc(100% / var(--total));
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    border: 1px solid rgba(242, 242, 242, 0.38);
 }
 
 #app {
@@ -23,9 +18,9 @@
     background-color: black;
     width: 500px;
     height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(var(--total),1fr);
+    grid-template-rows: repeat(var(--total),1fr);
 }
 
 #controlDiv {

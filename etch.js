@@ -13,7 +13,7 @@ function clearGrid() {
     console.log("goodbye grid!");
 }
 function colourMe(me) {
-    me === null || me === void 0 ? void 0 : me.setAttribute("style", "background-color:blue;");
+    me === null || me === void 0 ? void 0 : me.setAttribute("style", "background-color: rebeccapurple;");
 }
 function createGrid(input) {
     let target = input * input;

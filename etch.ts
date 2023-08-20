@@ -15,7 +15,7 @@ function clearGrid(): void {
 }
 
 function colourMe (me: HTMLDivElement) {
-    me?.setAttribute("style", "background-color:blue;")
+    me?.setAttribute("style", "background-color: rebeccapurple;")
 }
 
 function createGrid(input: number): void {
